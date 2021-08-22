@@ -7,7 +7,7 @@ Mit dem Befehl öffnen wir genau diese Datei hier im "nur lese Modus"
 Wenn wir bei , "r") das r austauschen gibt es Folgende Möglichkeiten.
 
 r  = read               leserechte
-w  = write              schreibrechte
+w  = write              schreibrechte !!!!! ACHTUNG !!!!! vorhandener inhalt wird überschrieben
 a  = append             Der Datei etwas anfügen
 r+ = read and write     lese und schreiberechte
 
