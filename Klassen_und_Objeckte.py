@@ -11,10 +11,16 @@
 '''
 
 class Schüler:
-    def __init__(self, name, alter, ist_mänlich):
+    def __init__(self, name, alter, ist_mänlich, x_sitzplatz, y_sitzplatz):
         self.name = name
         self.alter = alter
         self.ist_mänlich = ist_mänlich
+        self.x_sitzplatz = x_sitzplatz
+        self.y_sitzplatz = y_sitzplatz
+    def umsetzen (self, x, y):
+        self.x_sitzplatz += x
+        self.y_sitzplatz += y
+
 
 '''
     Mit class haben wir die Klasse definiert und anschließend wurde durch def __init__(self) mitgegeben was noch für Werte in diese Klasse gehören.
@@ -22,7 +28,7 @@ class Schüler:
     Zu self. gibt es nachher mehr…
 '''
 
-Schüler1 = Schüler("Uwe", 13, True)
+Schüler1 = Schüler("Uwe", 13, True, 2, 4)
 
 #   Dadurch das wir einer Variable (Schüler1) mit Daten der Klasse >Schüler< gefüllt haben, ist der Schüler1 ein Objekt.
 
@@ -49,3 +55,18 @@ print(Schüler1)
     Wenn wir nämlich ein Objekt erstellen wollen, dann geht Python hin und referenziert ein Teil der Arbeitspeichers der dann mit Attributen gefüllt wird.
     Darum wird self angegeben da an der stelle der aktuell eigene Speicherbereich genutzt werden soll.
 '''
+
+'''
+    Kommen wir zu Methoden. Was ist eine Methode?
+    Als Methode bezeichnet man eine Funktion innerhalb einer Klasse. 
+    Doch was heißt das konkret? 
+    Wir haben die Klasse Schüler erstellt. In den Objekten speicher wir auch seinen Sitzplatz in einem Koordinatensystem.
+    Wenn sich jetzt allerdings ein Schüler umsetzt, dann können wir über die definierte Methode > umstzen < den Schüler einen neuen Platz zuwiesen
+    Sagen wir mal er setzt sich eine Reihe nach vorn und einen Platz nach links. dann sieht es so aus…
+'''
+
+print(Schüler1.x_sitzplatz)     # Kontrolle der Position x
+print(Schüler1.y_sitzplatz)     # Kontrolle der Position y
+Schüler1.umsetzen(1, -1)        # Übergabe der Attribute 
+print(Schüler1.x_sitzplatz)     # Kontrolle der Position x
+print(Schüler1.y_sitzplatz)     # Kontrolle der Position y
