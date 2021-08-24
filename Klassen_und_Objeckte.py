@@ -70,3 +70,8 @@ print(Schüler1.y_sitzplatz)     # Kontrolle der Position y
 Schüler1.umsetzen(1, -1)        # Übergabe der Attribute 
 print(Schüler1.x_sitzplatz)     # Kontrolle der Position x
 print(Schüler1.y_sitzplatz)     # Kontrolle der Position y
+
+'''
+    Noch etwas verständlicher wird es, wenn man in die Datei Multiple_Choice_Quiz.py schaut.
+    Dort wurde es noch mal an einen praktischen Beispiel gezeigt
+'''
