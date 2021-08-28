@@ -29,6 +29,7 @@ print(my_num)
 print(my_num + 2)
 print(str(my_num))                  # Hier wird aus dem Matthematischen Wert ein String generiet
 print(str(my_num) + " ist toll")    # Hier funktioniert die Ausgabe weil die Zahl auch ein String ist. Man kann verschiedene Typen nicht mischen.
+print(f"{my_num} ist toll")         # Auch eine Möglichkeit zur ausgabe… (f steht für format. Es formatiert die Ausgabe)
 #print(my_num + " ist toll")        # Wirft einen Fehler aus weil hier unterschiedliche Datentypen genutzt wurden.
 print(my_num + -1)
 print(abs(my_num_neg))              # Gibt den absoluten Wert aus. Aus -2 wird 2
